@@ -1,2 +1,7 @@
-# score-keeper
-Stop wasting paper and start using this electronic score keeper for your games.
+# Score Keeper
+
+No longer waste paper trying to keep track of each others score. Instead use Score Keeper, an electronic score keeper that will tell you who is winning.
+
+## Supported Games
+
+    - [Flip7](./games/flip-7.html)

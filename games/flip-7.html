@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flip 7</title>
+        <link rel="stylesheet" href="./styles/flip-7.css">
+        <script defer src="./scripts/flip-7.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>Flip 7</h1>
+            <div id="tabBttns">
+                <button onclick="changePage(1)">Round</button>
+                <button onclick="changePage(0)">Leaderboard</button>
+            </div>
+
+            <!-- Leaderboard -->
+            <div id="leaderWrapper" class="page">
+                <h2>Leaderboard</h2>
+                <div id="leaderboard"></div>
+            </div>
+
+            <!-- Round Data -->
+            <div id="roundWrapper" class="page">
+                <h2>Round <span id="roundNum">#</span></h2>
+                <form id="roundForm">
+                    <div id="roundPeople">
+                        <p>Add people to get started.</p>
+                    </div>
+                    <button type="submit">End Round</button>
+                </form>
+            </div>
+            <div id="actionBttns">
+                <button onclick="show('#addPlayer')">Add Player</button>
+                <button onclick="newGame()">New Game</button>
+            </div>
+        </div>
+        <div id="addPlayer">
+            <h1>Add Player</h1>
+            <form id="addPlayerForm">
+                <label for="name">Initials</label>
+                <input type="text" name="name" maxlength="3" required>
+
+                <div id="addPlayerBttns">
+                    <button type="button" onclick="hide('#addPlayer')">Cancel</button>
+                    <button type="submit">Add</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
