@@ -4,4 +4,4 @@ No longer waste paper trying to keep track of each others score. Instead use Sco
 
 ## Supported Games
 
--   [Flip7](https://jeremiah-bogard.github.io/score-keeper/games/flip-7.html)
+-   [Flip7](https://jeremiah-bogard.github.io/score-keeper/games/Flip7)
