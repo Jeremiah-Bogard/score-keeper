@@ -70,7 +70,7 @@ function roundOver(e) {
 	let roundArray = []
 
 	for (let i = 0; i < players.length; i++) {
-		let score = e[`${players[i]}Score`].value
+		let score = e[`${players[i]}Score`].value || 0
 		roundArray.push(parseFloat(score))
 		totals[i] = (totals[i] || 0) + parseFloat(score)
 	}
